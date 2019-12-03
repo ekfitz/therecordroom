@@ -81,22 +81,5 @@ function goMaps() {
 }
 
 function url_redirect(url){
-    var X = setTimeout(function(){
-        window.location.replace("https://www.facebook.com/TheRecordRoom/");
-        return true;
-    },300);
-      if( window.location = "https://www.facebook.com/TheRecordRoom/" ){
-        clearTimeout(X);
-        return true;
-    } else {
-        if( window.location.href = "https://www.facebook.com/TheRecordRoom/" ){
-            clearTimeout(X);
-            return true;
-        }else{
-            clearTimeout(X);
-            window.location.replace("https://www.facebook.com/TheRecordRoom/");
-            return true;
-        }
-    }
-    return false;
+  window.open("https://www.facebook.com/TheRecordRoom/");
 }
