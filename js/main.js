@@ -51,7 +51,7 @@ function setMobile() {
 }
 
 function goFace() {
-  window.location.href = "https://www.facebook.com/TheRecordRoom/";
+  window.location.replace("https://www.facebook.com/TheRecordRoom/");
 }
 
 function highText() {
@@ -77,5 +77,5 @@ function showMenu() {
 }
 
 function goMaps() {
-  window.location.href = "https://www.google.com/maps/place/The+Record+Room/@33.5703568,-112.123404,15z/data=!4m8!1m2!2m1!1srecord+room!3m4!1s0x0:0x7d247de177608ff4!8m2!3d33.5688612!4d-112.1154785";
+  window.location.replace("https://www.google.com/maps/place/The+Record+Room/@33.5703568,-112.123404,15z/data=!4m8!1m2!2m1!1srecord+room!3m4!1s0x0:0x7d247de177608ff4!8m2!3d33.5688612!4d-112.1154785");
 }
