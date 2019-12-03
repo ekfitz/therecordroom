@@ -53,14 +53,9 @@ function setMobile() {
   }
 }
 
-
-
 function url_redirect(url){
   window.open("https://www.facebook.com/TheRecordRoom/");
 }
-
-
-
 
 function highText() {
   this.style.opacity = "1";
@@ -72,9 +67,9 @@ function regText() {
 
 function showMenu() {
   if (nav1.style.top == "-5%") {
-    nav1.style.top = "10%";
-    nav2.style.top = "10%";
-    nav3.style.top = "10%";
+    nav1.style.top = "3%";
+    nav2.style.top = "3%";
+    nav3.style.top = "3%";
     menu.style.transform = "rotate(-90deg)";
   } else {
     nav1.style.top = "-5%";
