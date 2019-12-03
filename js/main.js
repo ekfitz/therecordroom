@@ -38,7 +38,7 @@ nav2.onmouseout = regText;
 nav3.onmouseover = highText;
 nav3.onmouseout = regText;
 
-circle.onclick = goFace;
+circle.onclick = url_redirect;
 menu.onclick = showMenu;
 address.onclick = goMaps;
 
@@ -78,4 +78,25 @@ function showMenu() {
 
 function goMaps() {
   window.location.replace("https://www.google.com/maps/place/The+Record+Room/@33.5703568,-112.123404,15z/data=!4m8!1m2!2m1!1srecord+room!3m4!1s0x0:0x7d247de177608ff4!8m2!3d33.5688612!4d-112.1154785");
+}
+
+function url_redirect(url){
+    var X = setTimeout(function(){
+        window.location.replace("https://www.facebook.com/TheRecordRoom/");
+        return true;
+    },300);
+      if( window.location = "https://www.facebook.com/TheRecordRoom/" ){
+        clearTimeout(X);
+        return true;
+    } else {
+        if( window.location.href = "https://www.facebook.com/TheRecordRoom/" ){
+            clearTimeout(X);
+            return true;
+        }else{
+            clearTimeout(X);
+            window.location.replace("https://www.facebook.com/TheRecordRoom/");
+            return true;
+        }
+    }
+    return false;
 }

@@ -41,7 +41,7 @@ nav2.onmouseout = regText;
 nav3.onmouseover = highText;
 nav3.onmouseout = regText;
 
-circle.onclick = goFace;
+circle.onclick = url_redirect;
 menu.onclick = showMenu;
 address.onclick = goMaps;
 
@@ -53,9 +53,31 @@ function setMobile() {
   }
 }
 
-function goFace() {
-  window.location.replace("https://www.facebook.com/TheRecordRoom/");
+
+
+function url_redirect(url){
+    var X = setTimeout(function(){
+        window.location.replace("https://www.facebook.com/TheRecordRoom/");
+        return true;
+    },300);
+      if( window.location = "https://www.facebook.com/TheRecordRoom/" ){
+        clearTimeout(X);
+        return true;
+    } else {
+        if( window.location.href = "https://www.facebook.com/TheRecordRoom/" ){
+            clearTimeout(X);
+            return true;
+        }else{
+            clearTimeout(X);
+            window.location.replace("https://www.facebook.com/TheRecordRoom/");
+            return true;
+        }
+    }
+    return false;
 }
+
+
+
 
 function highText() {
   this.style.opacity = "1";
